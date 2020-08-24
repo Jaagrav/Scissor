@@ -36,7 +36,6 @@ function displayCompressImage(files) {
     })
     .then((data) => {
       compressedImage = data[0].prefix + data[0].data;
-      console.log(data[0]);
       document.querySelector(".header").style.height = "60px";
       document.querySelector(".compressedImage").src = compressedImage;
       document.querySelector(".compressed-file-size").textContent =
